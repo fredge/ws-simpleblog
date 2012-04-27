@@ -7,7 +7,12 @@
     "type": "git",
     "url": "git://github.com/fredge/ws-simpleblog.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "websocket" : "1.0.4",
+    "node-static" : "0.5.9",
+    "mysql" : "0.9.5",
+    "ejs" : "0.7.1"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
