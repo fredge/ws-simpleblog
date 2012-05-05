@@ -21,6 +21,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+    <script src="/client.js"></script>
   </head>
   <body>
     <div class="navbar navbar-fixed-top">
@@ -35,7 +36,7 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="">Home</a></li>
-              <li><a href="">GitHub</a></li>
+              <li><a href="https://github.com/fredge/ws-simpleblog">GitHub</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -44,17 +45,17 @@
     <div class="container span6">
       <form>
         <div id="form-component">
-          <textarea class="span6"></textarea>
+          <textarea id="comment" class="span6"></textarea>
         </div>
         <div id="form-control">
-          <input type="submit" value="Post Comment" class="btn btn-primary pull-right" />
+          <input type="button" id="post" value="Post Comment" class="btn btn-primary pull-right" />
         </div>
       </form>
       <h1 style="margin-top:40px; margin-bottom:20px;">Latest Posts</h1>
-      <a class="btn"><i class="icon-chevron-up"></i></a>
+      <a class="btn" id="newer"><i class="icon-chevron-up"></i></a>
       <div class="row">
         <table class="table-striped span6">
-          <tbody>
+          <tbody id="tbody1">
             <!-- show posts -->
             <% for(var i=0; i < data.posts.length; i++) { %>
                 <tr>
@@ -64,6 +65,6 @@
           </tbody>
         </table>
       </div>
-      <a class="btn "><i class="icon-chevron-down"></i></a>
+      <a class="btn" id="older"><i class="icon-chevron-down"></i></a>
     </div> <!-- /container -->
 </body></html>
